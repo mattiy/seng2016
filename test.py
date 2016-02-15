@@ -20,6 +20,28 @@ class TestSuite(unittest.TestCase):
 
         self.failIf(len(output.getvalue().splitlines()) != 100)
 
+    def test_V1_div3(self):	
+	app = FizzBuzz()
+		
+	self.failIf(app.calc(9) != "Fizz")
+
+    def test_V1_div5(self):
+        app = FizzBuzz()
+
+        self.failIf(app.calc(10) != "Buzz")
+
+    def test_V1_div35(self):
+        app = FizzBuzz()
+
+        self.failIf(app.calc(15) != "FizzBuzz")
+        self.failIf(app.calc(45) != "FizzBuzz")
+
+    def test_V1_number(self):
+        app = FizzBuzz()
+
+        self.failIf(app.calc(1) != 1)
+
+
     def test_V2_primes(self):
         app = FizzBuzz()
 
