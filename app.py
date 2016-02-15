@@ -22,6 +22,14 @@ class FizzBuzz():
 
     # Seems to give correct values. Tested with 1 and 2.
     def calc(self, i):
+
+        if(i > 1):
+            for jakaja in range(2,i):
+                if(i%jakaja == 0):
+                    break
+            else:
+                return str(i) + " is a prime"
+        
         if(i%3 == 0):
             if(i%5 == 0):
                 return "FizzBuzz"
