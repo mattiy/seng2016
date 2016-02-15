@@ -40,6 +40,15 @@ class TestSuite(unittest.TestCase):
         app = FizzBuzz()
 
         self.failIf(app.calc(2) != 2)
+
+    def test_V2_primeTest(self):
+        app = FizzBuzz()
+
+        self.failIf(app.calc(7) !=  "7 is a prime")
+        self.failIf(app.calc(11) !=  "11 is a prime")
+        self.failIf(app.calc(19) !=  "19 is a prime")
+        self.failIf(app.calc(23) !=  "23 is a prime")
+        self.failIf(app.calc(31) !=  "31 is a prime")
 		
 def main():
     unittest.main()
