@@ -41,7 +41,7 @@ class TestSuite(unittest.TestCase):
 
         self.failIf(app.calc(2) != 2)
 
-    def test_V2_primeTest(self):
+    def test_V2_primes(self):
         app = FizzBuzz()
 
         self.failIf(app.calc(7) !=  "7 is a prime")
