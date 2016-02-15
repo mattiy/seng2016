@@ -30,10 +30,11 @@ class TestSuite(unittest.TestCase):
 
         self.failIf(app.calc(5) != "Buzz")
 
-    def test_V1_div15(self):
+    def test_V1_div35(self):
         app = FizzBuzz()
 
         self.failIf(app.calc(15) != "FizzBuzz")
+        self.failIf(app.calc(45) != "FizzBuzz")
 
     def test_V1_number(self):
         app = FizzBuzz()
